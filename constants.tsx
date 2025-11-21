@@ -11,13 +11,7 @@ export const AUDIO_URL = "https://archive.org/download/hk-kirtan/Gurudeva%20Krpa
 export const SCHEDULE_ITEMS: ScheduleItem[] = [];
 
 export const WEEKLY_ACTIVITIES: WeeklyActivity[] = [
-  {
-    day: "Daily Morning",
-    activity: "Nithyam Bhagavata Sevaya",
-    audience: "Everyone",
-    description: "Leading the daily worship and reading of Srimad Bhagavatam to foster consistent spiritual practice and scriptural immersion.",
-    icon: BookOpen
-  },
+  // 'Nithyam Bhagavata Sevaya' removed per user request.
   {
     day: "Daily Service",
     activity: "Annadanam Seva",

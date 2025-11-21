@@ -13,17 +13,24 @@ const Teachings: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center p-2 bg-stone-800 rounded-full border border-stone-700 mb-4">
-            <Feather className="h-6 w-6 text-saffron-400" />
+        <div className="mb-16 flex flex-col md:flex-row md:items-center md:justify-between">
+          <div className="text-left md:max-w-2xl">
+            <div className="inline-flex items-center p-2 bg-stone-800 rounded-full border border-stone-700 mb-4">
+              <Feather className="h-6 w-6 text-saffron-400" />
+            </div>
+            <h2 className="font-display text-4xl md:text-5xl text-saffron-50">Guru's Teachings</h2>
+            <p className="font-sans text-stone-400 mt-4 max-w-2xl">
+              Jewels of wisdom from Prabhuji's lectures, guiding us on the path of devotion.
+            </p>
+            <div className="mt-6 max-w-3xl bg-stone-800/60 border border-stone-700 rounded-xl p-6">
+              <p className="text-left italic text-lg md:text-xl text-yellow-100 mb-2">“Make your heart so affluged with compassion, purity, and Krishna-bhakti that the whole world feels drawn to walk the path that leads to His lotus feet.”</p>
+              <p className="text-left text-sm text-saffron-300 font-semibold">— HH Radhanath Swami Maharaj</p>
+            </div>
           </div>
-          <h2 className="font-display text-4xl md:text-5xl text-saffron-50">Guru's Teachings</h2>
-          <p className="font-sans text-stone-400 mt-4 max-w-2xl mx-auto">
-            Jewels of wisdom from Prabhuji's lectures, guiding us on the path of devotion.
-          </p>
-          <div className="mt-6 max-w-3xl mx-auto bg-stone-800/60 border border-stone-700 rounded-xl p-6">
-            <p className="text-center italic text-lg md:text-xl text-yellow-100 mb-2">“Make your heart so affluged with compassion, purity, and Krishna-bhakti that the whole world feels drawn to walk the path that leads to His lotus feet.”</p>
-            <p className="text-center text-sm text-saffron-300 font-semibold">— HH Radhanath Swami Maharaj</p>
+          <div className="hidden md:flex md:items-center md:justify-center md:ml-8">
+            <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <img src="/Images/hg-pranavanand-1.jpg" alt="HG Pranavanand Das" className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
 
