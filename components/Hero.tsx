@@ -17,10 +17,7 @@ const Hero: React.FC = () => {
             <span className="block text-saffron-700 font-sans font-bold tracking-[0.2em] text-sm uppercase">
                 Humble Offering of Service
             </span>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-center italic text-lg md:text-xl text-stone-600 mb-2">“Make your heart so affluged with compassion, purity, and Krishna-bhakti that the whole world feels drawn to walk the path that leads to His lotus feet.”</p>
-              <p className="text-center text-sm text-saffron-600 font-semibold">— HH Radhanath Swami Maharaj</p>
-            </div>
+            {/* quote moved to Guru's Teachings section */}
             <h1 className="font-display text-5xl md:text-7xl font-bold text-stone-800 leading-tight drop-shadow-sm">
                 {BIRTHDAY_GREETING}
             </h1>
@@ -37,19 +34,11 @@ const Hero: React.FC = () => {
             <h2 className="font-serif italic text-2xl md:text-3xl text-stone-600 mt-4">
                 {PRABHUJI_NAME}
             </h2>
-            <p className="font-sans text-stone-500 max-w-2xl mx-auto mt-6 text-lg italic">
-                "{HERO_SUBTITLE}"
+            <p className="font-sans text-stone-700 max-w-2xl mx-auto mt-6 text-lg md:text-xl italic font-medium drop-shadow-sm">
+                {HERO_SUBTITLE}
             </p>
         </div>
-
         
-
-        <a 
-          href="#glorification" 
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-saffron-600"
-        >
-          <ChevronDown size={32} />
-        </a>
       </div>
     </section>
   );

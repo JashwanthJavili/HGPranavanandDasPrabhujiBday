@@ -21,6 +21,10 @@ const Teachings: React.FC = () => {
           <p className="font-sans text-stone-400 mt-4 max-w-2xl mx-auto">
             Jewels of wisdom from Prabhuji's lectures, guiding us on the path of devotion.
           </p>
+          <div className="mt-6 max-w-3xl mx-auto bg-stone-800/60 border border-stone-700 rounded-xl p-6">
+            <p className="text-center italic text-lg md:text-xl text-yellow-100 mb-2">“Make your heart so affluged with compassion, purity, and Krishna-bhakti that the whole world feels drawn to walk the path that leads to His lotus feet.”</p>
+            <p className="text-center text-sm text-saffron-300 font-semibold">— HH Radhanath Swami Maharaj</p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
