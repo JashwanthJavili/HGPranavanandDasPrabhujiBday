@@ -7,28 +7,8 @@ export const PRABHUJI_TITLE = "A Beacon of Krishna Consciousness";
 export const BIRTHDAY_GREETING = "Happy Birthday, Beloved Gurudeva";
 export const AUDIO_URL = "https://archive.org/download/hk-kirtan/Gurudeva%20Krpa%20Bindu%20Diya%20-%20Agni%20Dev%20Das.mp3";
 
-export const SCHEDULE_ITEMS: ScheduleItem[] = [
-  {
-    time: "6:45 - 7:10 AM",
-    activity: "Yoga Class",
-    description: "Harmonizing body and soul in preparation for divine communion."
-  },
-  {
-    time: "7:10 - 7:20 AM",
-    activity: "Japa Session",
-    description: "Guiding participants in the sacred chanting of the Hare Krishna maha-mantra."
-  },
-  {
-    time: "7:20 - 7:35 AM",
-    activity: "Srimad Bhagavatam Reading",
-    description: "Immersing hearts in the nectar of Krishna's lilas."
-  },
-  {
-    time: "7:35 - 8:15 AM",
-    activity: "Japa Class",
-    description: "Gentle encouragement dissolves offenses and deepens connection to the holy name."
-  }
-];
+// Schedule removed per user request. Keep the array empty to avoid runtime references.
+export const SCHEDULE_ITEMS: ScheduleItem[] = [];
 
 export const WEEKLY_ACTIVITIES: WeeklyActivity[] = [
   {
