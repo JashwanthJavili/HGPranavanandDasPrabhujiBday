@@ -26,6 +26,14 @@ const Hero: React.FC = () => {
             </h1>
           {/* Flower particles animation placed just under the main title */}
           <FlowerParticles />
+          <div className="mt-6">
+            <img
+              src="/Images/prabhuju.png"
+              alt="HG Pranavananda Das Prabhuji"
+              className="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-white shadow-xl mx-auto object-cover"
+              loading="lazy"
+            />
+          </div>
             <h2 className="font-serif italic text-2xl md:text-3xl text-stone-600 mt-4">
                 {PRABHUJI_NAME}
             </h2>
@@ -34,14 +42,7 @@ const Hero: React.FC = () => {
             </p>
         </div>
 
-        <div className="mt-8">
-          <img
-            src="/Images/prabhuju.png"
-            alt="HG Pranavananda Das Prabhuji"
-            className="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-white shadow-xl mx-auto object-cover"
-            loading="lazy"
-          />
-        </div>
+        
 
         <a 
           href="#glorification" 
