@@ -148,16 +148,16 @@ export const CONTACT_PHONE = "+91 99638 28877";
 export const CONTACT_EMAIL = "pranavanandadas.office@gmail.com";
 
 export const GALLERY_IMAGES: GalleryImage[] = [
-  { url: '/Images/Prabhjiwithcroud.png', caption: 'Prabhuji with crowd', isVertical: false },
-  { url: '/Images/HG Pranavanand Das Prabhu1ji.jpg', caption: 'HG Pranavananda Das Prabhu', isVertical: false },
-  { url: '/Images/Prabhujitakingaasjirvaad.png', caption: 'Taking Aashirvaad', isVertical: false },
-  { url: '/Images/Prabhujitakingdress.png', caption: 'Receiving Dress', isVertical: false },
-  { url: '/Images/prabhujiwithradhanathswamymaharaj.png', caption: 'With Radhanath Swami Maharaj', isVertical: false },
-  { url: '/Images/Prabhuju.png', caption: 'Prabhuji Portrait', isVertical: true },
-  { url: '/Images/Prabhujuinschool.png', caption: 'Prabhuji in School', isVertical: true },
-  { url: '/Images/Pranavanand Das prabhu with Radhanath Swamy Maharaj 1.jpg', caption: 'Pranavanand Das with Radhanath Swami (1)', isVertical: false },
-  { url: '/Images/Pranavanand Das prabhu with Radhanath Swamy Maharaj.jpg', caption: 'Pranavanand Das with Radhanath Swami', isVertical: false },
-  { url: '/Images/Radhanath Swamy Maharaj.jpg', caption: 'HH Radhanath Swami Maharaj', isVertical: false }
+  { url: '/Images/prabhuji-with-crowd.svg', caption: 'Prabhuji with crowd', isVertical: false },
+  { url: '/Images/hg-pranavanand-1.svg', caption: 'HG Pranavananda Das Prabhu', isVertical: false },
+  { url: '/Images/prabhuji-taking-aashirvaad.svg', caption: 'Taking Aashirvaad', isVertical: false },
+  { url: '/Images/prabhuji-taking-dress.svg', caption: 'Receiving Dress', isVertical: false },
+  { url: '/Images/prabhuji-with-radhanath.svg', caption: 'With Radhanath Swami Maharaj', isVertical: false },
+  { url: '/Images/prabhuju.svg', caption: 'Prabhuji Portrait', isVertical: true },
+  { url: '/Images/prabhuju-in-school.svg', caption: 'Prabhuji in School', isVertical: true },
+  { url: '/Images/pranavanand-with-radhanath-1.svg', caption: 'Pranavanand Das with Radhanath Swami (1)', isVertical: false },
+  { url: '/Images/pranavanand-with-radhanath-2.svg', caption: 'Pranavanand Das with Radhanath Swami', isVertical: false },
+  { url: '/Images/radhanath-swamy.svg', caption: 'HH Radhanath Swami Maharaj', isVertical: false }
 ];
 
 export const TRIBUTE_TEXT = `

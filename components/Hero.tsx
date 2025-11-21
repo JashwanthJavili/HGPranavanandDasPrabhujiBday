@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
 
         <div className="mt-8">
           <img
-            src="/Images/Prabhuju.png"
+            src="/Images/prabhuju.svg"
             alt="HG Pranavananda Das Prabhuji"
             className="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-white shadow-xl mx-auto object-cover"
             loading="lazy"

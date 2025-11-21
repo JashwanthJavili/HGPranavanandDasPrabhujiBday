@@ -5,9 +5,9 @@ import { HeartHandshake } from 'lucide-react';
 const Tribute: React.FC = () => {
   // Rotating images for the Birthday Offering (topmost visual)
   const images = [
-    '/Images/Pranavanand Das prabhu with Radhanath Swamy Maharaj.jpg',
-    '/Images/Prabhujitakingdress.png',
-    '/Images/prabhujiwithradhanathswamymaharaj.png'
+    '/Images/pranavanand-with-radhanath-1.svg',
+    '/Images/prabhuji-taking-dress.svg',
+    '/Images/prabhuji-with-radhanath.svg'
   ];
 
   const [index, setIndex] = React.useState(0);
