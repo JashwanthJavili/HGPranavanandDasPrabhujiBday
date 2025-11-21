@@ -20,6 +20,8 @@ const Hero: React.FC = () => {
             <h1 className="font-display text-5xl md:text-7xl font-bold text-stone-800 leading-tight drop-shadow-sm">
                 {BIRTHDAY_GREETING}
             </h1>
+          {/* Flower particles animation placed just under the main title */}
+          <FlowerParticles />
             <h2 className="font-serif italic text-2xl md:text-3xl text-stone-600 mt-4">
                 {PRABHUJI_NAME}
             </h2>
@@ -45,6 +47,47 @@ const Hero: React.FC = () => {
         </a>
       </div>
     </section>
+  );
+};
+
+const FlowerParticles: React.FC = () => {
+  const COUNT = 14;
+  const flowers = React.useMemo(() => {
+    return Array.from({ length: COUNT }).map(() => {
+      const left = Math.random() * 100; // percent
+      const delay = Math.random() * 6; // seconds
+      const duration = 6 + Math.random() * 6; // 6-12s
+      const size = 18 + Math.random() * 28; // px
+      const rotate = Math.random() * 360;
+      return { left, delay, duration, size, rotate };
+    });
+  }, []);
+
+  return (
+    <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+      <style>{`
+        @keyframes prabhu-flower-fall {
+          0% { transform: translateY(-10vh) rotate(0deg); opacity: 0; }
+          10% { opacity: 1; }
+          100% { transform: translateY(110vh) rotate(360deg); opacity: 0.95; }
+        }
+      `}</style>
+      {flowers.map((f, i) => (
+        <span
+          key={i}
+          style={{
+            left: `${f.left}%`,
+            top: `-6vh`,
+            fontSize: f.size,
+            transform: `rotate(${f.rotate}deg)`,
+            animation: `prabhu-flower-fall ${f.duration}s linear ${f.delay}s infinite`
+          }}
+          className="absolute text-[24px] md:text-[28px]"
+        >
+          🌺
+        </span>
+      ))}
+    </div>
   );
 };
 
