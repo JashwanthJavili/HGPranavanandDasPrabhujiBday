@@ -19,11 +19,28 @@ const Glorification: React.FC = () => {
             <p className="font-sans text-stone-500 mt-4 max-w-2xl mx-auto uppercase tracking-widest text-xs">Glorification of Exalted Vaishnavas</p>
         </div>
 
-        {/* Centerpiece: Feet of HH Radhanath Swamy Maharaj */}
-        <div className="mx-auto mb-12 flex items-center justify-center relative">
-          <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-white shadow-2xl">
-            <img src="/Images/feet-of-hh-radhanath-swamy.jpg" alt="Feet of HH Radhanath Swami" className="w-full h-full object-cover" />
+        {/* Centerpiece: Lotus feet images */}
+        <div className="mx-auto mb-12 flex items-start justify-center gap-8 relative">
+          <div className="flex flex-col items-center">
+            <div className="relative w-44 h-44 md:w-60 md:h-60 rounded-full overflow-hidden border-6 border-white shadow-2xl">
+              <img src="/Images/feet-of-hh-radhanath-swamy.jpg" alt="Feet of HH Radhanath Swami" className="w-full h-full object-cover" />
+            </div>
+            <div className="mt-3 text-center">
+              <p className="text-sm font-semibold text-stone-700">Lotus feet of</p>
+              <p className="text-xs text-saffron-600 font-medium">HH Radhanath Swami Maharaj</p>
+            </div>
           </div>
+
+          <div className="flex flex-col items-center">
+            <div className="relative w-44 h-44 md:w-60 md:h-60 rounded-full overflow-hidden border-6 border-white shadow-2xl">
+              <img src="/Images/feet-of-pranavanand-das-prabhu.png" alt="Feet of HG Pranavanand Das Prabhu" className="w-full h-full object-cover" />
+            </div>
+            <div className="mt-3 text-center">
+              <p className="text-sm font-semibold text-stone-700">Lotus feet of</p>
+              <p className="text-xs text-orange-500 font-medium">HG Pranavanand Das Prabhuji</p>
+            </div>
+          </div>
+
           <div className="absolute inset-0 pointer-events-none">
             <FallingFlowers />
           </div>
@@ -97,7 +114,7 @@ const FallingFlowers: React.FC = () => {
   }, []);
 
   return (
-    <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+    <div aria-hidden className="pointer-events-none absolute inset-0 z-10">
       <style>{`
         @keyframes flower-fall {
           0% { transform: translateY(-8vh) rotate(0deg); opacity: 0; }
