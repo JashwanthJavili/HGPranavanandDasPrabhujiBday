@@ -23,12 +23,12 @@ const Glorification: React.FC = () => {
             
             {/* Radhanath Swami Glorification */}
             <div className="relative rounded-2xl overflow-hidden shadow-xl border-t-4 border-saffron-400 hover:shadow-2xl transition-shadow duration-300">
-                <div className="absolute inset-0 bg-cover" style={{ backgroundImage: `url('/Images/radhanath-swamy.svg')`, backgroundPosition: 'center 35%' }} />
+                <div className="absolute inset-0 bg-cover" style={{ backgroundImage: `url('/Images/radhanath-swamy.jpg')`, backgroundPosition: 'center 35%' }} />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="p-8 md:p-10 relative z-10">
                 <div className="flex items-center space-x-4 mb-6">
                     <div className="h-16 w-16 rounded-full overflow-hidden border-2 border-saffron-200">
-                         <img src="/Images/radhanath-swamy.svg" alt="HH Radhanath Swami" className="w-full h-full object-cover" loading="lazy" />
+                         <img src="/Images/radhanath-swamy.jpg" alt="HH Radhanath Swami" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                     <div>
                         <h3 className="font-display text-xl md:text-2xl text-white">HH Radhanath Swami Maharaj</h3>
@@ -44,12 +44,12 @@ const Glorification: React.FC = () => {
 
             {/* Pranavananda Prabhu Glorification */}
             <div className="relative rounded-2xl overflow-hidden shadow-xl border-t-4 border-orange-400 hover:shadow-2xl transition-shadow duration-300">
-               <div className="absolute inset-0 bg-cover" style={{ backgroundImage: `url('/Images/hg-pranavanand-1.svg')`, backgroundPosition: 'center 40%' }} />
+               <div className="absolute inset-0 bg-cover" style={{ backgroundImage: `url('/Images/hg-pranavanand-1.jpg')`, backgroundPosition: 'center 40%' }} />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="p-8 md:p-10 relative z-10">
                 <div className="flex items-center space-x-4 mb-6">
                     <div className="h-16 w-16 rounded-full overflow-hidden border-2 border-orange-200">
-                         <img src="/Images/hg-pranavanand-1.svg" alt="HG Pranavananda Das" className="w-full h-full object-cover" loading="lazy" />
+                         <img src="/Images/hg-pranavanand-1.jpg" alt="HG Pranavananda Das" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                      <div>
                         <h3 className="font-display text-xl md:text-2xl text-white">HG Pranavananda Das Prabhu</h3>
