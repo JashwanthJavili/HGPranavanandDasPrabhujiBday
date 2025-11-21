@@ -19,32 +19,7 @@ const Glorification: React.FC = () => {
             <p className="font-sans text-stone-500 mt-4 max-w-2xl mx-auto uppercase tracking-widest text-xs">Glorification of Exalted Vaishnavas</p>
         </div>
 
-        {/* Centerpiece: Lotus feet images */}
-        <div className="mx-auto mb-12 flex items-start justify-center gap-8 relative">
-          <div className="flex flex-col items-center">
-            <div className="relative w-44 h-44 md:w-60 md:h-60 rounded-full overflow-hidden border-6 border-white shadow-2xl">
-              <img src="/Images/feet-of-hh-radhanath-swamy.jpg" alt="Feet of HH Radhanath Swami" className="w-full h-full object-cover" />
-            </div>
-            <div className="mt-3 text-center">
-              <p className="text-sm font-semibold text-stone-700">Lotus feet of</p>
-              <p className="text-xs text-saffron-600 font-medium">HH Radhanath Swami Maharaj</p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <div className="relative w-44 h-44 md:w-60 md:h-60 rounded-full overflow-hidden border-6 border-white shadow-2xl">
-              <img src="/Images/feet-of-pranavanand-das-prabhu.png" alt="Feet of HG Pranavanand Das Prabhu" className="w-full h-full object-cover" />
-            </div>
-            <div className="mt-3 text-center">
-              <p className="text-sm font-semibold text-stone-700">Lotus feet of</p>
-              <p className="text-xs text-orange-500 font-medium">HG Pranavanand Das Prabhuji</p>
-            </div>
-          </div>
-
-          <div className="absolute inset-0 pointer-events-none">
-            <FallingFlowers />
-          </div>
-        </div>
+        {/* Centerpiece removed: feet images moved to dedicated sections per request */}
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
             
@@ -98,45 +73,4 @@ const Glorification: React.FC = () => {
 
 export default Glorification;
 
-const FallingFlowers: React.FC = () => {
-  const COUNT = 18;
-  const flowers = React.useMemo(() => {
-    const types = ['🌺','🌸','💐','🌼','🌷'];
-    return Array.from({ length: COUNT }).map(() => {
-      const left = Math.random() * 100; // percent
-      const delay = Math.random() * 6; // seconds
-      const duration = 5 + Math.random() * 7; // 5-12s
-      const size = 14 + Math.random() * 28; // px
-      const rotate = Math.random() * 360;
-      const char = types[Math.floor(Math.random() * types.length)];
-      return { left, delay, duration, size, rotate, char };
-    });
-  }, []);
-
-  return (
-    <div aria-hidden className="pointer-events-none absolute inset-0 z-10">
-      <style>{`
-        @keyframes flower-fall {
-          0% { transform: translateY(-8vh) rotate(0deg); opacity: 0; }
-          8% { opacity: 1; }
-          100% { transform: translateY(110vh) rotate(360deg); opacity: 0.95; }
-        }
-      `}</style>
-      {flowers.map((f, i) => (
-        <span
-          key={i}
-          style={{
-            left: `${f.left}%`,
-            top: `-6vh`,
-            fontSize: f.size,
-            transform: `rotate(${f.rotate}deg)`,
-            animation: `flower-fall ${f.duration}s linear ${f.delay}s infinite`
-          }}
-          className="absolute"
-        >
-          {f.char}
-        </span>
-      ))}
-    </div>
-  );
-};
+/* FallingFlowers component removed */

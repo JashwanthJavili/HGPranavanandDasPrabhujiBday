@@ -44,6 +44,8 @@ const Gallery: React.FC = () => {
               </div>
             </div>
           )}
+
+          {/* (No feet image here — moved to a dedicated section after Gallery) */}
       </div>
     </section>
   );

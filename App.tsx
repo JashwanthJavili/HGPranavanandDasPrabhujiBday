@@ -7,6 +7,8 @@ import Glorification from './components/Glorification';
 import Teachings from './components/Teachings';
 import Tribute from './components/Tribute';
 import Gallery from './components/Gallery';
+import Blessings from './components/Blessings';
+import FeetSection from './components/FeetSection';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
 import MusicPlayer from './components/MusicPlayer';
@@ -75,10 +77,13 @@ const App: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <About />
+        <Blessings />
         <Glorification />
         <Teachings />
         <Tribute />
         <Gallery />
+        {/* Dedicated Pranavanand feet section (moved out of Gallery) */}
+        <FeetSection image="/Images/feet-of-pranavanand-das-prabhu.png" alt="Lotus feet of HG Pranavanand Das Prabhu" caption="Lotus feet of HG Pranavanand Das Prabhuji" flowers={true} />
         <Connect />
       </main>
       <Footer />
