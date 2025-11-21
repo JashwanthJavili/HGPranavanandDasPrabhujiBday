@@ -20,6 +20,13 @@ export const WEEKLY_ACTIVITIES: WeeklyActivity[] = [
     icon: HandPlatter
   },
   {
+    day: "Daily",
+    activity: "Nithyam Bhagavatha Sevaya",
+    audience: "All Devotees",
+    description: "Daily Bhagavata seva — devoted recitation and study of the Srimad Bhagavatam to nurture loving service.",
+    icon: BookOpen
+  },
+  {
     day: "Every Tuesday",
     activity: "Children's Value Education",
     audience: "Children below 15 years",
