@@ -19,16 +19,16 @@ const Gallery: React.FC = () => {
             {GALLERY_IMAGES.map((image, index) => (
               <div
                 key={index}
-                className={`relative group overflow-hidden rounded-lg shadow-2xl bg-white ring-1 ring-yellow-200 border border-yellow-100 ${
+                className={`relative group overflow-hidden rounded-lg shadow-2xl bg-gradient-to-b from-white/0 to-saffron-50 ring-1 ring-yellow-100 border border-yellow-50 ${
                   image.isVertical ? 'md:row-span-2' : 'md:col-span-1'
                 } ${index === 3 ? 'md:col-span-2' : ''}`}
                 onClick={() => setSelected(image.url)}
               >
-                <div className="w-full h-full flex items-center justify-center bg-gray-50 p-3">
-                  <img src={image.url} alt={image.caption} className="max-w-full max-h-full object-contain" loading="lazy" />
+                <div className="w-full h-full flex items-center justify-center">
+                  <img src={image.url} alt={image.caption} className="w-full h-full object-cover" loading="lazy" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <p className="text-yellow-100 font-serif text-sm md:text-base font-medium">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <p className="text-yellow-50 font-serif text-sm md:text-base font-medium">
                     {image.caption}
                   </p>
                 </div>
