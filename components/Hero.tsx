@@ -17,6 +17,10 @@ const Hero: React.FC = () => {
             <span className="block text-saffron-700 font-sans font-bold tracking-[0.2em] text-sm uppercase">
                 Humble Offering of Service
             </span>
+            <div className="max-w-3xl mx-auto">
+              <p className="text-center italic text-lg md:text-xl text-stone-600 mb-2">“Make your heart so affluged with compassion, purity, and Krishna-bhakti that the whole world feels drawn to walk the path that leads to His lotus feet.”</p>
+              <p className="text-center text-sm text-saffron-600 font-semibold">— HH Radhanath Swami Maharaj</p>
+            </div>
             <h1 className="font-display text-5xl md:text-7xl font-bold text-stone-800 leading-tight drop-shadow-sm">
                 {BIRTHDAY_GREETING}
             </h1>
