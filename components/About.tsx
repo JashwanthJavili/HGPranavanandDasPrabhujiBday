@@ -36,31 +36,14 @@ const About: React.FC = () => {
             </div>
           </div>
 
-              {/* Right Column: Daily Schedule (as the card behind the title) */}
-              <div id="schedule" className="relative z-10">
-              <div className="bg-white rounded-2xl p-8 shadow-xl border border-stone-100">
-                <div className="flex items-center mb-8">
-                  <div className="bg-saffron-100 p-3 rounded-full mr-4">
-                    <Clock className="h-6 w-6 text-saffron-600" />
+              {/* Right Column: Portrait image of HG Pranavanand Das Prabhu (replaces Daily Sadhana card) */}
+              <div id="schedule" className="relative z-10 flex items-center justify-center">
+                <div className="bg-white rounded-2xl p-4 shadow-xl border border-stone-100 w-full max-w-sm">
+                  <div className="w-full h-[420px] overflow-hidden rounded-lg">
+                    <img src="/Images/hg-pranavanand-1.jpg" alt="HG Pranavanand Das Prabhu" className="w-full h-full object-contain" />
                   </div>
-                  <div>
-                    <h3 className="font-display text-2xl text-stone-800">Daily Sadhana</h3>
-                    <p className="text-stone-500 text-sm">Nithayam Bhagavatha Sevaya</p>
-                  </div>
+                  <p className="text-center text-sm text-stone-500 mt-3">HG Pranavanand Das Prabhu</p>
                 </div>
-                
-                <div className="space-y-6">
-                  {SCHEDULE_ITEMS.map((item, index) => (
-                  <div key={index} className="relative pl-8 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-saffron-400 before:rounded-full hover:bg-stone-50 p-2 rounded transition-colors">
-                    <div className="font-mono text-saffron-600 text-xs font-bold uppercase tracking-wider mb-1">
-                    {item.time}
-                    </div>
-                    <h4 className="font-serif font-bold text-stone-800 text-lg">{item.activity}</h4>
-                    <p className="text-sm text-stone-500 mt-1 leading-relaxed">{item.description}</p>
-                  </div>
-                  ))}
-                </div>
-              </div>
               </div>
         </div>
 
