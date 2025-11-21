@@ -19,6 +19,16 @@ const Glorification: React.FC = () => {
             <p className="font-sans text-stone-500 mt-4 max-w-2xl mx-auto uppercase tracking-widest text-xs">Glorification of Exalted Vaishnavas</p>
         </div>
 
+        {/* Centerpiece: Feet of HH Radhanath Swamy Maharaj */}
+        <div className="mx-auto mb-12 flex items-center justify-center relative">
+          <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+            <img src="/Images/feet-of-hh-radhanath-swamy.jpg" alt="Feet of HH Radhanath Swami" className="w-full h-full object-cover" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none">
+            <FallingFlowers />
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-start">
             
             {/* Radhanath Swami Glorification */}
@@ -70,3 +80,46 @@ const Glorification: React.FC = () => {
 };
 
 export default Glorification;
+
+const FallingFlowers: React.FC = () => {
+  const COUNT = 18;
+  const flowers = React.useMemo(() => {
+    const types = ['🌺','🌸','💐','🌼','🌷'];
+    return Array.from({ length: COUNT }).map(() => {
+      const left = Math.random() * 100; // percent
+      const delay = Math.random() * 6; // seconds
+      const duration = 5 + Math.random() * 7; // 5-12s
+      const size = 14 + Math.random() * 28; // px
+      const rotate = Math.random() * 360;
+      const char = types[Math.floor(Math.random() * types.length)];
+      return { left, delay, duration, size, rotate, char };
+    });
+  }, []);
+
+  return (
+    <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+      <style>{`
+        @keyframes flower-fall {
+          0% { transform: translateY(-8vh) rotate(0deg); opacity: 0; }
+          8% { opacity: 1; }
+          100% { transform: translateY(110vh) rotate(360deg); opacity: 0.95; }
+        }
+      `}</style>
+      {flowers.map((f, i) => (
+        <span
+          key={i}
+          style={{
+            left: `${f.left}%`,
+            top: `-6vh`,
+            fontSize: f.size,
+            transform: `rotate(${f.rotate}deg)`,
+            animation: `flower-fall ${f.duration}s linear ${f.delay}s infinite`
+          }}
+          className="absolute"
+        >
+          {f.char}
+        </span>
+      ))}
+    </div>
+  );
+};
