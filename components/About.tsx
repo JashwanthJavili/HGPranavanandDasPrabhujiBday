@@ -36,32 +36,15 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Daily Schedule */}
-          <div id="schedule" className="relative z-10">
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-stone-100">
-                <div className="flex items-center mb-8">
-                    <div className="bg-saffron-100 p-3 rounded-full mr-4">
-                        <Clock className="h-6 w-6 text-saffron-600" />
-                    </div>
-                    <div>
-                        <h3 className="font-display text-2xl text-stone-800">Daily Sadhana</h3>
-                        <p className="text-stone-500 text-sm">Nithayam Bhagavatha Sevaya</p>
-                    </div>
-                </div>
-                
-                <div className="space-y-6">
-                    {SCHEDULE_ITEMS.map((item, index) => (
-                    <div key={index} className="relative pl-8 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-saffron-400 before:rounded-full hover:bg-stone-50 p-2 rounded transition-colors">
-                        <div className="font-mono text-saffron-600 text-xs font-bold uppercase tracking-wider mb-1">
-                        {item.time}
-                        </div>
-                        <h4 className="font-serif font-bold text-stone-800 text-lg">{item.activity}</h4>
-                        <p className="text-sm text-stone-500 mt-1 leading-relaxed">{item.description}</p>
-                    </div>
-                    ))}
-                </div>
+            {/* Right Column: Portrait (replaces Daily Sadhana as requested) */}
+            <div id="schedule" className="relative z-10">
+            <div className="bg-white rounded-2xl p-4 shadow-xl border border-stone-100 flex items-center justify-center">
+              <div className="w-full h-full max-w-sm">
+                <img src="/Images/hg-pranavanand-1.jpg" alt="HG Pranavanand Das Prabhu" className="w-full h-auto object-cover rounded-lg shadow-md" />
+                <p className="text-center text-sm text-stone-500 mt-3">HG Pranavanand Das Prabhu</p>
+              </div>
             </div>
-          </div>
+            </div>
         </div>
 
         {/* Weekly Outreach Section */}

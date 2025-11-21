@@ -25,11 +25,8 @@ We remain your humble dāsas in this life, and if Krishna allows, eternally at y
 
         <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-saffron-300">
           <div className="relative h-80 md:h-[520px] bg-black/5 flex items-center justify-center">
-            <div className="relative w-full h-full flex items-center justify-center">
+              <div className="relative w-full h-full flex items-center justify-center">
               <img src={heroImage} alt="Birthday Offering" className="max-h-[92%] max-w-[92%] object-cover rounded-xl border-8 border-white shadow-2xl" />
-              <div className="absolute inset-0 pointer-events-none">
-                <TributeFlowers />
-              </div>
             </div>
           </div>
 
