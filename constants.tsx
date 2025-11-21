@@ -186,7 +186,7 @@ Prabhuji, at your divine lotus feet, I, Jashwanth, offer myself as your ever-obe
 At your lotus feet, Prabhuji, I, Jashwanth, remain your humble servant — offering my life in devotion, surrender, and pure bhakti.
 `;
 
-export const HERO_SUBTITLE = "I, Javili Jashwanth, am your small dāsa, Prabhuji — holding on to your lotus feet with devotion, surrender, and love.";
+export const HERO_SUBTITLE = "I, J Jashwanth, am your small dāsa, Prabhuji — holding on to your lotus feet with devotion, surrender, and love.";
 
 export const GLORIFICATION_RADHANATH_SWAMI = `
 Radhanath Swami Maharaj is like a soft breeze of compassion sent by Sri Krishna to soothe the hearts of seekers in this age of suffering.

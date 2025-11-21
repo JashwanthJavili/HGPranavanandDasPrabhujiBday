@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-stone-800 pt-6 text-sm font-sans">
           <p>Dedicated to the service of HG Pranavananda Das Prabhuji.</p>
-          <p className="mt-1 opacity-60">Developed with devotion by Javili Jashwanth.</p>
+          <p className="mt-1 opacity-60">Developed with devotion by J Jashwanth.</p>
         </div>
       </div>
     </footer>
